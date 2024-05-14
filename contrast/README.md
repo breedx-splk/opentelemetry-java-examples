@@ -24,7 +24,6 @@ docker run -it --rm \
 
 The UI will be at http://localhost:16686/
 
-
 In other terminals:
 ```bash
 ../gradlew runManual
@@ -35,7 +34,8 @@ In other terminals:
 In yet another terminal, send some data:
 ```bash
 curl http://localhost:8123/manualTracing          # manual tracing 
-curl http://localhost:8123/libraryInstrumentation # library instrumentation 
+curl http://localhost:8124/libraryInstrumentation # library instrumentation 
+curl http://localhost:8125/javaAgent              # javaaagent auto-instrumentation 
 ```
 
 ## Issues/questions

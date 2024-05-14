@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 public class JavaAgentAutoInstrumentation {
 
-    public static final int PORT = 8123;
+    public static final int PORT = 8125;
 
     public static void main(String[] args) throws Exception {
         // This will not work, because the agent is started BEFORE the main method is invoked

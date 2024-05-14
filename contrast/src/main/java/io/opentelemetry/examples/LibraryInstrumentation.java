@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LibraryInstrumentation {
 
-    public static final int PORT = 8123;
+    public static final int PORT = 8124;
     private final OpenTelemetry otel;
     private final ArmeriaTelemetry armeriaTelemetry;
 
