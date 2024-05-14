@@ -47,13 +47,13 @@ public class FullyManual {
         Tracer tracer = otel.getTracer("MyHttpClient");
         WebClient webClient = WebClient.of("http://localhost:" + PORT);
         while(true){
-            System.out.print("\033[0;33mDoing a request from client to server....");
+            System.out.print("\033[0;33mDoing a request from client to server..");
             Span span = tracer.spanBuilder("clientHttpRequest").startSpan();
             try(Scope scope = span.makeCurrent()) {
                 String response = webClient.get("/manualTracing").aggregate().join()
                         .content()
                         .toString(StandardCharsets.UTF_8);
-                System.out.println("...complete.\033[0m");
+                System.out.println(".complete.\033[0m");
                 System.out.println(response);
             }
             finally {

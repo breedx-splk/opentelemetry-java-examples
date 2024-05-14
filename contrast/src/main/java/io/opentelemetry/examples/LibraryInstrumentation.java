@@ -55,11 +55,11 @@ public class LibraryInstrumentation {
                 .decorator(armeriaTelemetry.newClientDecorator())
                 .build();
         while (true) {
-            System.out.print("\033[0;33mDoing a request from client to server....");
+            System.out.print("\033[0;33mDoing a request from client to server..");
             String response = webClient.get("/libraryInstrumentation").aggregate().join()
                     .content()
                     .toString(StandardCharsets.UTF_8);
-            System.out.println("...complete.\033[0m");
+            System.out.println(".complete.\033[0m");
             System.out.println(response);
             TimeUnit.SECONDS.sleep(3);
         }

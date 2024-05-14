@@ -7,6 +7,9 @@ Examples for comparing and contrasting
 * leveraging existing library instrumentation
 * full auto-instrumentation
 
+Each one has a main application method that starts up an Ameria server and then
+has a client that sends requests every 3 seconds.
+
 # Using
 
 In one terminal, run jaeger via docker:
@@ -26,6 +29,7 @@ In other terminals:
 ```bash
 ../gradlew runManual
 ../gradlew libraryInstrumentation
+../gradlew javaAgent
 ```
 
 In yet another terminal, send some data:
@@ -37,3 +41,4 @@ curl http://localhost:8123/libraryInstrumentation # library instrumentation
 ## Issues/questions
 
 * Manual example doesn't do propagation. Guess that needs to be manual as well!
+* Having the agent jar just plopped into the repo is simple, but unsophisticated
