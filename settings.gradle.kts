@@ -62,6 +62,7 @@ include(
     ":opentelemetry-examples-spring-native",
     ":opentelemetry-examples-kotlin-extension",
     ":opentelemetry-examples-grpc",
+    ":opentelemetry-examples-contrast",
     ":opentelemetry-examples-resource-detection-gcp"
 )
 
