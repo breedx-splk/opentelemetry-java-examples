@@ -16,4 +16,6 @@ dependencies {
     implementation("io.opentelemetry:opentelemetry-exporter-logging")
     implementation("io.opentelemetry:opentelemetry-exporter-otlp")
     implementation("io.opentelemetry:opentelemetry-sdk-extension-autoconfigure")
+    implementation("io.jaegertracing:jaeger-client:1.8.1")
+    implementation("io.jaegertracing:jaeger-thrift:1.8.1")
 }
